@@ -27,8 +27,8 @@ Kaira Assistant is a modern, AI-powered assistant platform with a Next.js fronte
 
 #### 1. Clone the repository
 ```sh
-git clone <repo-url>
-cd Kaira assistant
+git clone https://github.com/abishlal/kaira.git
+cd kaira
 ```
 
 #### 2. Start with Docker (recommended)
@@ -48,15 +48,13 @@ pnpm dev     # or npm run dev
 **Backend:**
 ```sh
 cd server
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python src/agent.py
+uv sync
+uv run src/agents dev
 ```
 
 ## Usage
 
-Access the frontend at [http://localhost:3000](http://localhost:3000) and interact with the assistant. Backend API runs on [http://localhost:8000](http://localhost:8000) by default.
+Access the frontend at [http://localhost:3000](http://localhost:3000) and interact with the assistant.
 
 ## Configuration
 
