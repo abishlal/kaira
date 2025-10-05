@@ -1,0 +1,27 @@
+services:
+  kaira-backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: kaira-backend
+    environment:
+      - LIVEKIT_URL=${LIVEKIT_URL}
+      - LIVEKIT_API_KEY=${LIVEKIT_API_KEY}
+      - LIVEKIT_API_SECRET=${LIVEKIT_API_SECRET}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    volumes:
+      - ./server/data:/app/data
+
+  kaira-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: kaira-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - LIVEKIT_URL=${LIVEKIT_URL}
+      - LIVEKIT_API_KEY=${LIVEKIT_API_KEY}
+      - LIVEKIT_API_SECRET=${LIVEKIT_API_SECRET}
+    depends_on:
+      - kaira-backend

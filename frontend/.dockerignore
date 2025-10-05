@@ -1,0 +1,12 @@
+node_modules
+.next
+pnpm-lock.yaml
+Dockerfile
+dist
+.env
+*.log
+.git
+.gitignore
+README.md
+LICENSE
+TEMPLATE.md
