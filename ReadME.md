@@ -4,22 +4,14 @@ Kaira Assistant is a modern, AI-powered assistant platform with a Next.js fronte
 
 ## Demo
 
-## Demo
-
 > 🎥 **Watch Kaira Assistant in action:**
 
-https://github.com/user-attachments/assets/your-video-id-here
+[View Demo Video](https://github.com/abishlal/kaira/blob/main/demo/kaira_demo.mp4)
 
-_Note: Upload your demo video (`demo/kaira.mp4`) to GitHub by dragging it into an issue or pull request comment, then replace the URL above with the generated link._
-
-Alternatively, if hosting the video locally:
-
-```markdown
 <video width="100%" controls>
-    <source src="demo/kaira.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+  <source src="https://github.com/abishlal/kaira/blob/main/demo/kaira_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
-```
 
 
 ## Features
