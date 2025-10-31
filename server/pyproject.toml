@@ -19,6 +19,7 @@ dependencies = [
     "duckduckgo-search",
     "langchain_community",
     "requests",
+    "ddgs>=9.6.1",
 ]
 
 [dependency-groups]
